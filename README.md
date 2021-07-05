@@ -14,14 +14,18 @@
 - To determine which county had the largest voter turnout we calculated the total number of votes for county and the percentage of total votes for each county in the precinct:
 
     i. We first declared the list, dictionary and variables where we wanted to store the results which we ultimately wanted to print
+    
       - We declared a list as county_list = [] to store the county names and a dictionary as county_dict = {} to store the county names and county votes. 
+      
       - We also declared 3 variables to store the winning county name as winning_county="", winning county vote count as winning_county_count= 0 and winning county         vote percentage as winning_county_percentage= 0
+      
       - We also specified the column using the row function to run through to find out county names and total votes for each county
         Code used-
         county_name = row [1]
 
 
     ii. We began with a for loop (same as above) and then we introduced a conditional statement inside the loop to append all the unique county names and then add 1         as each time we find the name
+        
         Code used- 
             if county_name not in county_list:
                 county_list.append(county_name)
@@ -29,6 +33,7 @@
             county_dict[county_name] += 1
 
     iii. Once we figured the all the counties and their total vote count we were able to calculate the vote percentages of each county and find the winning county            with maximum votes
+         
          Code used- 
             for county_name in county_dict:
                 county_votes_count = county_dict.get(county_name)
@@ -42,18 +47,18 @@
 
 - Diana DeGette was the winning cadidate with 72,892 votes and their vote percentage is 73.8%    
 - To determine the winning candidate we followed the same set of codes and i.e.
-- 
+
         i. Specify which row to conisder for candidate name
          Code used-
          candidate_name = row[2]  
--
+
         ii. Within the for loop, run a condition to store the candidate names in the declared lists followed by their vote count in the dictionary
          Code used-     
                 if candidate_name not in candidate_options:
                 candidate_options.append(candidate_name)
                 candidate_votes[candidate_name] = 0
             candidate_votes[candidate_name] += 1
--
+
         iii. Once the candidate name and their vote count were determined we calculated who was the winning cadidate
             Code used-
             for candidate_name in candidate_votes:
