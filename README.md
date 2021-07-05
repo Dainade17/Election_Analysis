@@ -37,4 +37,3 @@ iii. Once we figured the all the counties and their total vote count we were abl
             winning_county_percentage = county_vote_percentage
             winning_county = county_name       
 
-In the for loop we used the variable county_name which was already declared before to store all the county names. 
