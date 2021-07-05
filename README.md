@@ -64,6 +64,5 @@ To determine the winning candidate we followed the same set of codes and i.e.
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
  
-
- 3. Election-Audit Summary: This script can be reused in future for other election result calculation provided we ensure the location for read and writing are accurate as well as the rows we specified for county calculation and winning voter calculations are accurate. 
+3. Election-Audit Summary: This script can be reused in future for other election result calculation provided we ensure the location for read and writing are accurate as well as the rows we specified for county calculation and winning voter calculations are accurate. 
 I was able to change one of the county name and save the csv file and rerun the code. The result replaced the old county name with the new county name and printed the correct result. 
