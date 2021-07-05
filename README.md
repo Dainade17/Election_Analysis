@@ -42,15 +42,18 @@
 
 - Diana DeGette was the winning cadidate with 72,892 votes and their vote percentage is 73.8%    
 - To determine the winning candidate we followed the same set of codes and i.e. 
+
         i. Specify which row to conisder for candidate name
          Code used-
          candidate_name = row[2]
+         
         ii. Within the for loop, run a condition to store the candidate names in the declared lists followed by their vote count in the dictionary
          Code used-     
                 if candidate_name not in candidate_options:
                 candidate_options.append(candidate_name)
                 candidate_votes[candidate_name] = 0
             candidate_votes[candidate_name] += 1
+            
         iii. Once the candidate name and their vote count were determined we calculated who was the winning cadidate
             Code used-
             for candidate_name in candidate_votes:
